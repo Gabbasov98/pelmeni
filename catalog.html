@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9133eb49-3a97-4b2d-90be-6b80a97a5036" type="text/javascript"></script>
+    <title>Главная</title>
+</head>
+
+
+<body class="m-page">
+    <div class="wrapper">
+        <header class="header _open1">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__mob">
+                        <button class="burger">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.25 6C3.25 5.58579 3.58579 5.25 4 5.25H20C20.4142 5.25 20.75 5.58579 20.75 6C20.75 6.41421 20.4142 6.75 20 6.75H4C3.58579 6.75 3.25 6.41421 3.25 6ZM3.25 12C3.25 11.5858 3.58579 11.25 4 11.25H20C20.4142 11.25 20.75 11.5858 20.75 12C20.75 12.4142 20.4142 12.75 20 12.75H4C3.58579 12.75 3.25 12.4142 3.25 12ZM3.25 18C3.25 17.5858 3.58579 17.25 4 17.25H13.5C13.9142 17.25 14.25 17.5858 14.25 18C14.25 18.4142 13.9142 18.75 13.5 18.75H4C3.58579 18.75 3.25 18.4142 3.25 18Z" fill="#828282" />
+                            </svg>
+                        </button>
+                        <a href="" class="header__logo">
+                            <img src="img/logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="menu__bg"></div>
+                    <div class="menu">
+                        <div class="menu__left">
+
+                        </div>
+                        <a href="" class="header__logo">
+                            <img src="img/logo.svg" alt="">
+                        </a>
+
+                        <div class="city-select">
+                            <div class="city-select__show">
+                                <span class="text16">г. Казань</span>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.46967 9.46967C7.76256 9.17678 8.23744 9.17678 8.53033 9.46967L12 12.9393L15.4697 9.46967C15.7626 9.17678 16.2374 9.17678 16.5303 9.46967C16.8232 9.76256 16.8232 10.2374 16.5303 10.5303L12.5303 14.5303C12.2374 14.8232 11.7626 14.8232 11.4697 14.5303L7.46967 10.5303C7.17678 10.2374 7.17678 9.76256 7.46967 9.46967Z" fill="#B3B3B3" />
+                                </svg>
+                            </div>
+                            <div class="city-select__hidden">
+                                <div class="city-select__items">
+                                    <a href="" class="city-select__item _active">Казань</a>
+                                    <a href="" class="city-select__item">Москва</a>
+                                    <a href="" class="city-select__item">Санкт-Петербург</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="tel:+74993912967" class="menu__phone">
+                            +7 (499) 391-29-67
+                        </a>
+
+                        <div class="menu__right">
+                            <div class="menu__links">
+                                <a href="" class="menu__link">
+                                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18.6529 0.76139C17.3216 1.25113 0.914291 7.55443 0.67263 7.669C-0.130392 8.04961 -0.224272 8.55233 0.444229 8.89237C0.508771 8.92519 1.61933 9.28033 2.91212 9.68158L5.26271 10.4111L10.6001 7.07224C13.5357 5.23584 15.9967 3.71273 16.0689 3.68757C16.2502 3.62436 16.4062 3.63027 16.479 3.7031C16.53 3.75407 16.5321 3.77965 16.4916 3.85456C16.4648 3.90412 14.5154 5.67445 12.1596 7.78862C9.80382 9.90279 7.87002 11.6491 7.86223 11.6694C7.85449 11.6896 7.77481 12.7451 7.68515 14.0149L7.52219 16.3237L7.69927 16.2999C7.79667 16.2867 7.95091 16.2364 8.04201 16.1881C8.13315 16.1399 8.74646 15.5843 9.40498 14.9536C10.0635 14.3228 10.6251 13.798 10.653 13.7873C10.6808 13.7766 11.7295 14.5195 12.9833 15.438C14.2371 16.3566 15.3612 17.1536 15.4813 17.2091C15.7963 17.3546 16.1511 17.3691 16.3815 17.2458C16.5874 17.1356 16.7885 16.862 16.8731 16.5771C16.9059 16.4669 17.6227 13.1549 18.4661 9.21711C19.8702 2.66096 19.9995 2.02622 20 1.68595C20.0005 1.36445 19.9871 1.28798 19.9009 1.11876C19.8402 0.999452 19.7366 0.877644 19.6354 0.806452C19.4039 0.643649 19.0207 0.626086 18.6529 0.76139Z" fill="#FF6F36" />
+                                    </svg>
+                                </a>
+                                <a href="" class="menu__link _red">
+                                    Франшиза
+                                </a>
+                            </div>
+                            <a href="" class="menu__offer">Публичная оферта</a>
+                            <div class="lang">
+                                <a href="" class="lang__item _active">
+                                    <span class="_view1">Русский</span>
+                                    <span class="_view2">RU</span>
+                                </a>
+                                <a href="" class="lang__item">
+                                    <span class="_view1">English</span>
+                                    <span class="_view2">EN</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </header>
+        <main class="content">
+
+            <section class="catalog">
+                <div class="container">
+                    <div class="breadcrumbs">
+                        <div class="breadcrumbs__items">
+                            <a href="" class="breadcrumbs__item">Выбор автомата</a>
+                            <span class="breadcrumbs__item">Выбор блюд</span>
+                        </div>
+                        <div class="text32 font2 bold-text">
+                            Право-Булочная, 35
+                        </div>
+                    </div>
+                    <button class="catalog__btn btn m-btn m-btn-gray">
+                        Выбрать другой автомат
+                    </button>
+                    <div class="catalog__inner">
+                        <div class="catalog-card ">
+                            <div class="catalog-card__top">
+                                <div class="catalog-card__img">
+                                    <img src="img/product.webp" alt="">
+                                </div>
+
+                                <img src="img/badge.png" alt="" class="catalog-card__badge">
+                            </div>
+                            <div class="catalog-card__content">
+                                <div class="catalog-card__info">
+                                    <div class="text20 font2 bold-text">
+                                        Пельмени с курицей
+                                    </div>
+                                    <div class="text16 gray-text2">
+                                        Мясо птицы, лук, специи
+                                    </div>
+                                    <div class="text16 gray-text2">
+                                        ООО "Сибирская коллекция”
+                                    </div>
+                                </div>
+                                <div class="catalog-card__bottom">
+                                    <div class="catalog-card__prices">
+                                        <div class="text24 semi-bold-text">
+                                            160 ₽
+                                        </div>
+                                        <div class="text16 gray-text2">
+                                            200 г
+                                        </div>
+                                    </div>
+
+                                    <div class="calc">
+                                        <button class="calc__btn _minus m-btn m-btn-gray">
+                                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M18.25 11.25H13H11.5H6.25C5.83579 11.25 5.5 11.5858 5.5 12C5.5 12.4142 5.83579 12.75 6.25 12.75H11.5H13H18.25C18.6642 12.75 19 12.4142 19 12C19 11.5858 18.6642 11.25 18.25 11.25Z" fill="#828282" />
+                                            </svg>
+                                        </button>
+                                        <input type="text" value="0">
+                                        <button class="calc__btn _plus m-btn m-btn-gray">
+                                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 5.25C12.9142 5.25 13.25 5.58579 13.25 6V11.25H18.5C18.9142 11.25 19.25 11.5858 19.25 12C19.25 12.4142 18.9142 12.75 18.5 12.75H13.25V18C13.25 18.4142 12.9142 18.75 12.5 18.75C12.0858 18.75 11.75 18.4142 11.75 18V12.75H6.5C6.08579 12.75 5.75 12.4142 5.75 12C5.75 11.5858 6.08579 11.25 6.5 11.25H11.75V6C11.75 5.58579 12.0858 5.25 12.5 5.25Z" fill="#828282" />
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog-card ">
+                            <div class="catalog-card__top">
+                                <div class="catalog-card__img">
+                                    <img src="img/product.webp" alt="">
+                                </div>
+
+                            </div>
+                            <div class="catalog-card__content">
+                                <div class="catalog-card__info">
+                                    <div class="text20 font2 bold-text">
+                                        Пельмени с говядиной
+                                    </div>
+                                    <div class="text16 gray-text2">
+                                        Говядина, лук, специи
+                                    </div>
+                                    <div class="text16 gray-text2">
+                                        ООО "Сибирская коллекция”
+                                    </div>
+                                </div>
+                                <div class="catalog-card__bottom">
+                                    <div class="catalog-card__prices">
+                                        <div class="text24 semi-bold-text">
+                                            160 ₽
+                                        </div>
+                                        <div class="text16 gray-text2">
+                                            200 г
+                                        </div>
+                                    </div>
+
+                                    <div class="calc">
+                                        <button class="calc__btn _minus m-btn m-btn-gray">
+                                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M18.25 11.25H13H11.5H6.25C5.83579 11.25 5.5 11.5858 5.5 12C5.5 12.4142 5.83579 12.75 6.25 12.75H11.5H13H18.25C18.6642 12.75 19 12.4142 19 12C19 11.5858 18.6642 11.25 18.25 11.25Z" fill="#828282" />
+                                            </svg>
+                                        </button>
+                                        <input type="text" value="0">
+                                        <button class="calc__btn _plus m-btn m-btn-gray">
+                                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 5.25C12.9142 5.25 13.25 5.58579 13.25 6V11.25H18.5C18.9142 11.25 19.25 11.5858 19.25 12C19.25 12.4142 18.9142 12.75 18.5 12.75H13.25V18C13.25 18.4142 12.9142 18.75 12.5 18.75C12.0858 18.75 11.75 18.4142 11.75 18V12.75H6.5C6.08579 12.75 5.75 12.4142 5.75 12C5.75 11.5858 6.08579 11.25 6.5 11.25H11.75V6C11.75 5.58579 12.0858 5.25 12.5 5.25Z" fill="#828282" />
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog-card _disabled">
+                            <div class="catalog-card__top">
+                                <div class="catalog-card__img">
+                                    <img src="img/product.webp" alt="">
+                                </div>
+
+                            </div>
+                            <div class="catalog-card__content">
+                                <div class="catalog-card__info">
+                                    <div class="text20 font2 bold-text">
+                                        Пельмени со свининой и индейкой
+                                    </div>
+                                    <div class="text16 gray-text2">
+                                        Свинина, лук, специи
+                                    </div>
+                                    <div class="text16 gray-text2">
+                                        ООО "Сибирская коллекция”
+                                    </div>
+                                </div>
+                                <div class="catalog-card__bottom">
+                                    <div class="catalog-card__prices">
+                                        <div class="text24 semi-bold-text">
+                                            160 ₽
+                                        </div>
+                                        <div class="text16 gray-text2">
+                                            200 г
+                                        </div>
+                                    </div>
+
+
+                                    <div class="catalog-card__empty m-btn m-btn-gray">
+                                        <span>Отсутствует</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="sticky-footer">
+                <div class="container">
+                    <div class="sticky-footer__inner">
+                        <div class="sticky-footer__title text24 font2 bold-text">
+                            <span>В корзине 3 блюда</span>
+                            <span class="sticky-footer__price">475р</span>
+                        </div>
+                        <a href="" class="sticky-footer__btn m-btn m-btn-primary">
+                            <span>Перейти к заказу</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>

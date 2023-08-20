@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9133eb49-3a97-4b2d-90be-6b80a97a5036" type="text/javascript"></script>
+    <title>Главная</title>
+</head>
+
+
+<body class="m-page">
+    <div class="wrapper">
+        <header class="header _open1">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__mob">
+                        <button class="burger">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.25 6C3.25 5.58579 3.58579 5.25 4 5.25H20C20.4142 5.25 20.75 5.58579 20.75 6C20.75 6.41421 20.4142 6.75 20 6.75H4C3.58579 6.75 3.25 6.41421 3.25 6ZM3.25 12C3.25 11.5858 3.58579 11.25 4 11.25H20C20.4142 11.25 20.75 11.5858 20.75 12C20.75 12.4142 20.4142 12.75 20 12.75H4C3.58579 12.75 3.25 12.4142 3.25 12ZM3.25 18C3.25 17.5858 3.58579 17.25 4 17.25H13.5C13.9142 17.25 14.25 17.5858 14.25 18C14.25 18.4142 13.9142 18.75 13.5 18.75H4C3.58579 18.75 3.25 18.4142 3.25 18Z" fill="#828282" />
+                            </svg>
+                        </button>
+                        <a href="" class="header__logo">
+                            <img src="img/logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="menu__bg"></div>
+                    <div class="menu">
+                        <div class="menu__left">
+
+                        </div>
+                        <a href="" class="header__logo">
+                            <img src="img/logo.svg" alt="">
+                        </a>
+
+                        <div class="city-select">
+                            <div class="city-select__show">
+                                <span class="text16">г. Казань</span>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.46967 9.46967C7.76256 9.17678 8.23744 9.17678 8.53033 9.46967L12 12.9393L15.4697 9.46967C15.7626 9.17678 16.2374 9.17678 16.5303 9.46967C16.8232 9.76256 16.8232 10.2374 16.5303 10.5303L12.5303 14.5303C12.2374 14.8232 11.7626 14.8232 11.4697 14.5303L7.46967 10.5303C7.17678 10.2374 7.17678 9.76256 7.46967 9.46967Z" fill="#B3B3B3" />
+                                </svg>
+                            </div>
+                            <div class="city-select__hidden">
+                                <div class="city-select__items">
+                                    <a href="" class="city-select__item _active">Казань</a>
+                                    <a href="" class="city-select__item">Москва</a>
+                                    <a href="" class="city-select__item">Санкт-Петербург</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="tel:+74993912967" class="menu__phone">
+                            +7 (499) 391-29-67
+                        </a>
+
+                        <div class="menu__right">
+                            <div class="menu__links">
+                                <a href="" class="menu__link">
+                                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18.6529 0.76139C17.3216 1.25113 0.914291 7.55443 0.67263 7.669C-0.130392 8.04961 -0.224272 8.55233 0.444229 8.89237C0.508771 8.92519 1.61933 9.28033 2.91212 9.68158L5.26271 10.4111L10.6001 7.07224C13.5357 5.23584 15.9967 3.71273 16.0689 3.68757C16.2502 3.62436 16.4062 3.63027 16.479 3.7031C16.53 3.75407 16.5321 3.77965 16.4916 3.85456C16.4648 3.90412 14.5154 5.67445 12.1596 7.78862C9.80382 9.90279 7.87002 11.6491 7.86223 11.6694C7.85449 11.6896 7.77481 12.7451 7.68515 14.0149L7.52219 16.3237L7.69927 16.2999C7.79667 16.2867 7.95091 16.2364 8.04201 16.1881C8.13315 16.1399 8.74646 15.5843 9.40498 14.9536C10.0635 14.3228 10.6251 13.798 10.653 13.7873C10.6808 13.7766 11.7295 14.5195 12.9833 15.438C14.2371 16.3566 15.3612 17.1536 15.4813 17.2091C15.7963 17.3546 16.1511 17.3691 16.3815 17.2458C16.5874 17.1356 16.7885 16.862 16.8731 16.5771C16.9059 16.4669 17.6227 13.1549 18.4661 9.21711C19.8702 2.66096 19.9995 2.02622 20 1.68595C20.0005 1.36445 19.9871 1.28798 19.9009 1.11876C19.8402 0.999452 19.7366 0.877644 19.6354 0.806452C19.4039 0.643649 19.0207 0.626086 18.6529 0.76139Z" fill="#FF6F36" />
+                                    </svg>
+                                </a>
+                                <a href="" class="menu__link _red">
+                                    Франшиза
+                                </a>
+                            </div>
+                            <a href="" class="menu__offer">Публичная оферта</a>
+                            <div class="lang">
+                                <a href="" class="lang__item _active">
+                                    <span class="_view1">Русский</span>
+                                    <span class="_view2">RU</span>
+                                </a>
+                                <a href="" class="lang__item">
+                                    <span class="_view1">English</span>
+                                    <span class="_view2">EN</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </header>
+        <main class="content">
+
+            <section class="main">
+                <div class="container">
+                    <div class="main__inner">
+                        <div class="main__content">
+                            <h1 class="text36 font2 bold-text">
+                                Горячие пельмешки
+                                из автомата <span>Pel-meni</span>
+                            </h1>
+                            <div class="text24 medium-text">
+                                Сваренные как дома
+                            </div>
+                        </div>
+                        <div class="main__bg">
+                            <img src="img/main-bg.webp" alt="" class="_view1">
+                            <img src="img/main-bg2.webp" alt="" class="_view2">
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <div class="location-modal">
+                <div class="location-modal__top">
+                    <button class="location-modal__back _close-modal">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5316 6.69635C12.8245 6.40345 12.8245 5.92858 12.5316 5.63569C12.2387 5.34279 11.7639 5.34279 11.471 5.63569L5.64112 11.4655C5.62947 11.477 5.6182 11.4889 5.60731 11.5012C5.48952 11.6336 5.41797 11.8081 5.41797 11.9993C5.41797 12.097 5.43663 12.1903 5.47059 12.2758C5.50718 12.3683 5.56287 12.4549 5.63764 12.5297L11.471 18.363C11.7639 18.6559 12.2387 18.6559 12.5316 18.363C12.8245 18.0701 12.8245 17.5952 12.5316 17.3024L7.97861 12.7493L17.8346 12.7493C18.2489 12.7493 18.5846 12.4135 18.5846 11.9993C18.5846 11.5851 18.2489 11.2493 17.8346 11.2493L7.97865 11.2493L12.5316 6.69635Z" fill="#828282" />
+                        </svg>
+                    </button>
+                    <div class="location-modal__title font2">
+                        Выберите автомат
+                    </div>
+                    <button class="location-modal__view">
+                        <svg class="_view1" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3.75C8.568 3.75 5.75 6.61771 5.75 10.2C5.75 11.957 6.5207 13.5993 7.78786 15.2917C8.85739 16.7201 10.2262 18.1166 11.6869 19.6068C11.7909 19.7128 11.8952 19.8193 12 19.9263C12.1048 19.8193 12.2091 19.7128 12.3131 19.6068C13.7738 18.1166 15.1426 16.7201 16.2121 15.2917C17.4793 13.5993 18.25 11.957 18.25 10.2C18.25 6.61771 15.432 3.75 12 3.75ZM4.25 10.2C4.25 5.82939 7.70002 2.25 12 2.25C16.3 2.25 19.75 5.82939 19.75 10.2C19.75 12.4194 18.7707 14.3772 17.4129 16.1907C16.2779 17.7065 14.8251 19.1879 13.3657 20.6761C13.0892 20.958 12.8125 21.2402 12.5377 21.5228C12.3965 21.6681 12.2026 21.75 12 21.75C11.7974 21.75 11.6035 21.6681 11.4623 21.5228C11.1875 21.2402 10.9108 20.958 10.6343 20.6761C9.17489 19.1879 7.72211 17.7065 6.58714 16.1907C5.2293 14.3772 4.25 12.4194 4.25 10.2ZM12 7.75C10.7574 7.75 9.75 8.75736 9.75 10C9.75 11.2426 10.7574 12.25 12 12.25C13.2426 12.25 14.25 11.2426 14.25 10C14.25 8.75736 13.2426 7.75 12 7.75ZM8.25 10C8.25 7.92893 9.92893 6.25 12 6.25C14.0711 6.25 15.75 7.92893 15.75 10C15.75 12.0711 14.0711 13.75 12 13.75C9.92893 13.75 8.25 12.0711 8.25 10Z" fill="#828282" />
+                        </svg>
+                        <svg class="_view2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4597 5.375C19.4597 4.96079 19.1239 4.625 18.7097 4.625H5.29297C4.87876 4.625 4.54297 4.96079 4.54297 5.375V10.375C4.54297 10.7892 4.87876 11.125 5.29297 11.125L18.7097 11.125C19.1239 11.125 19.4597 10.7892 19.4597 10.375V5.375ZM6.04297 6.125L17.9597 6.125V9.625L6.04297 9.625L6.04297 6.125Z" fill="#828282" />
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4597 13.708C19.4597 13.2938 19.1239 12.958 18.7097 12.958L5.29297 12.958C4.87876 12.958 4.54297 13.2938 4.54297 13.708V18.708C4.54297 19.1222 4.87876 19.458 5.29297 19.458H18.7097C19.1239 19.458 19.4597 19.1222 19.4597 18.708V13.708ZM6.04297 14.458L17.9597 14.458V17.958H6.04297L6.04297 14.458Z" fill="#828282" />
+                        </svg>
+                    </button>
+                </div>
+                <section class="address-mob _view1">
+                    <div class="address-mob__items">
+                        <div class="address-card">
+
+
+                            <input type="radio" name="address2">
+                            <div class="address-card__inner">
+                                <div class="address-card__top">
+                                    <div class="address-card__name">
+                                        ТЦ МЕГА
+                                    </div>
+                                    <div class="address-card__bus">
+                                        Авт. № 1
+                                    </div>
+                                </div>
+                                <div class="address-card__desc">
+                                    ул. Краснознаменная, д. 14, цок. этаж
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="address-card">
+
+
+                            <input type="radio" name="address2">
+                            <div class="address-card__inner">
+                                <div class="address-card__top">
+                                    <div class="address-card__name">
+                                        БЦ Булак
+                                    </div>
+                                    <div class="address-card__bus">
+                                        Авт. № 2
+                                    </div>
+                                </div>
+                                <div class="address-card__desc">
+                                    ул. Право-Булочная, д. 35, под. 5
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="address-card">
+
+
+                            <input type="radio" name="address2">
+                            <div class="address-card__inner">
+                                <div class="address-card__top">
+                                    <div class="address-card__name">
+                                        Магнит
+                                    </div>
+                                    <div class="address-card__bus">
+                                        Авт. № 3
+                                    </div>
+                                </div>
+                                <div class="address-card__desc">
+                                    ул. Карла Маркса, д. 25
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="address-card">
+
+
+                            <input type="radio" name="address2">
+                            <div class="address-card__inner">
+                                <div class="address-card__top">
+                                    <div class="address-card__name">
+                                        Пятерочка
+                                    </div>
+                                    <div class="address-card__bus">
+                                        Авт. № 4
+                                    </div>
+                                </div>
+                                <div class="address-card__desc">
+                                    ул. Ленина, д. 47
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="address-card">
+
+
+                            <input type="radio" name="address2">
+                            <div class="address-card__inner">
+                                <div class="address-card__top">
+                                    <div class="address-card__name">
+                                        Жилой дом
+                                    </div>
+                                    <div class="address-card__bus">
+                                        Авт. № 5
+                                    </div>
+                                </div>
+                                <div class="address-card__desc">
+                                    ул. Саид-Галеева, д. 6
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                <section class="_view2 location">
+                    <div class="container">
+                        <div class="location__inner">
+                            <div class="addresses">
+                                <div class="text24 font2 bold-text">
+                                    Выберите нужный автомат
+                                </div>
+                                <div class="addresses-slider">
+                                    <div class="swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="address-card">
+
+
+                                                    <input type="radio" name="address">
+                                                    <div class="address-card__inner">
+                                                        <div class="address-card__top">
+                                                            <div class="address-card__name">
+                                                                ТЦ МЕГА
+                                                            </div>
+                                                            <div class="address-card__bus">
+                                                                Авт. № 1
+                                                            </div>
+                                                        </div>
+                                                        <div class="address-card__desc">
+                                                            ул. Краснознаменная, д. 14, цок. этаж
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="address-card">
+
+
+                                                    <input type="radio" name="address">
+                                                    <div class="address-card__inner">
+                                                        <div class="address-card__top">
+                                                            <div class="address-card__name">
+                                                                БЦ Булак
+                                                            </div>
+                                                            <div class="address-card__bus">
+                                                                Авт. № 2
+                                                            </div>
+                                                        </div>
+                                                        <div class="address-card__desc">
+                                                            ул. Право-Булочная, д. 35, под. 5
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="address-card">
+
+
+                                                    <input type="radio" name="address">
+                                                    <div class="address-card__inner">
+                                                        <div class="address-card__top">
+                                                            <div class="address-card__name">
+                                                                Магнит
+                                                            </div>
+                                                            <div class="address-card__bus">
+                                                                Авт. № 3
+                                                            </div>
+                                                        </div>
+                                                        <div class="address-card__desc">
+                                                            ул. Карла Маркса, д. 25
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="address-card">
+
+
+                                                    <input type="radio" name="address">
+                                                    <div class="address-card__inner">
+                                                        <div class="address-card__top">
+                                                            <div class="address-card__name">
+                                                                Пятерочка
+                                                            </div>
+                                                            <div class="address-card__bus">
+                                                                Авт. № 4
+                                                            </div>
+                                                        </div>
+                                                        <div class="address-card__desc">
+                                                            ул. Ленина, д. 47
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="address-card">
+
+
+                                                    <input type="radio" name="address">
+                                                    <div class="address-card__inner">
+                                                        <div class="address-card__top">
+                                                            <div class="address-card__name">
+                                                                Жилой дом
+                                                            </div>
+                                                            <div class="address-card__bus">
+                                                                Авт. № 5
+                                                            </div>
+                                                        </div>
+                                                        <div class="address-card__desc">
+                                                            ул. Саид-Галеева, д. 6
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-scrollbar"></div>
+                                </div>
+                            </div>
+
+                            <div class="map" id="map">
+
+                            </div>
+                            <script type="text/javascript">
+                                ymaps.ready(init);
+                                let coord = [55.790084, 49.110879]
+                                let mapPoints = [{
+                                        icon: 'img/mark-black.svg',
+                                        cords: [55.880243, 49.152102]
+                                    },
+                                    {
+                                        icon: 'img/mark.svg',
+                                        cords: [55.790084, 49.110879]
+                                    },
+                                    {
+                                        icon: 'img/mark.svg',
+                                        cords: [55.796744, 49.121182]
+                                    },
+                                    {
+                                        icon: 'img/mark.svg',
+                                        cords: [55.791273, 49.100162]
+                                    },
+                                ]
+
+
+
+                                function init() {
+                                    let myMap = new ymaps.Map("map", {
+                                        center: coord,
+                                        zoom: 10,
+                                        controls: []
+                                    });
+
+                                    // myMap.behaviors.disable('scrollZoom');
+
+
+                                    mapPoints.forEach(el => {
+                                        let placeMark = new ymaps.Placemark(el.cords, {}, {
+                                            iconLayout: 'default#image',
+                                            iconImageHref: el.icon,
+                                            iconImageSize: [44, 44],
+                                        });
+                                        myMap.geoObjects.add(placeMark);
+                                    })
+
+
+
+
+
+                                }
+                            </script>
+
+                        </div>
+                    </div>
+                </section>
+                <div class="location-modal__bottom">
+                    <button class="m-btn m-btn-primary">
+                        <span>Продолжить</span>
+                    </button>
+                </div>
+            </div>
+
+
+
+            <section class="sticky-footer">
+                <div class="container">
+                    <div class="sticky-footer__inner">
+                        <div class="text24 font2 bold-text _hide-mob">
+                            Адрес: ул. Право-Булочная, д. 35, под. 5
+                        </div>
+                        <button class="_show-addresses sticky-footer__btn m-btn m-btn-primary">
+                            <span>Смотреть меню</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>

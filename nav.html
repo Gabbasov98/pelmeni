@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9133eb49-3a97-4b2d-90be-6b80a97a5036" type="text/javascript"></script>
+    <title>Главная</title>
+</head>
+
+
+
+<style>
+    .wrapper a {
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+
+    .wrapper button {
+        margin-bottom: 25px;
+        width: 300px;
+        height: 45px;
+    }
+</style>
+
+<body class="m-page">
+
+    <div class="wrapper" style="padding: 50px;">
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Главная (Вариант когда у нас 1 автомат)
+        </a>
+        <a href="index2.html" style="display: block; margin-bottom: 20px;">
+            Главная (Вариант когда у нас несколько автоматов)
+        </a>
+        <a href="catalog.html" style="display: block; margin-bottom: 20px;">
+            Страница с блюдами
+        </a>
+        <a href="catalog2.html" style="display: block; margin-bottom: 20px;">
+            Страница с блюдами 2
+        </a>
+        <a href="order.html" style="display: block; margin-bottom: 20px;">
+            Чекаут
+        </a>
+        <a href="receipt.html" style="display: block; margin-bottom: 20px;">
+            Чек заказа
+        </a>
+
+
+
+
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-modal="additiveModal">
+            Добавить соусы?
+        </button>
+
+    </div>
+
+    <div class="modal" id="additiveModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__scroll">
+                <div class="modal-product">
+                    <div class="modal-product__img">
+                        <img src="img/product2.webp" alt="">
+                    </div>
+                    <div class="modal-product__content">
+                        <div class="modal-product__col">
+                            <div class="modal-product__title">
+                                Пельмени с говядиной
+                            </div>
+                            <div class="modal-product__contain">Говядина, лук, специи</div>
+                            <div class="modal-product__co">ООО "Сибирская коллекция”</div>
+                        </div>
+                        <div class="modal-product__col">
+                            <div class="modal-product__price">
+                                150 ₽
+                            </div>
+                            <div class="modal-product__weight">200 г</div>
+                            <div class="modal-product__kkal">550 ккал</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal__content">
+                    <div class="modal__question">
+                        <div class="modal__question-title">Добавить соусы?</div>
+                        <div class="modal__question-price">+ 40 ₽</div>
+                    </div>
+                    <div class="additive">
+                        <div class="additive-card">
+                            <div class="additive-card__img">
+                                <img src="img/additive.webp" alt="">
+                            </div>
+                            <div class="additive-card__content">
+                                <div class="additive-card__title">
+                                    Майонез
+                                </div>
+                                <div class="additive-card__props">
+                                    <div class="additive-card__price">20 ₽</div>
+                                    <div class="additive-card__weight">25 г</div>
+                                </div>
+                            </div>
+                            <div class="additive-card__action">
+                                <div class="calc">
+                                    <button class="calc__btn _minus m-btn m-btn-gray">
+                                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M18.25 11.25H13H11.5H6.25C5.83579 11.25 5.5 11.5858 5.5 12C5.5 12.4142 5.83579 12.75 6.25 12.75H11.5H13H18.25C18.6642 12.75 19 12.4142 19 12C19 11.5858 18.6642 11.25 18.25 11.25Z" fill="#828282" />
+                                        </svg>
+                                    </button>
+                                    <input type="text" value="0">
+                                    <button class="calc__btn _plus m-btn m-btn-gray">
+                                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 5.25C12.9142 5.25 13.25 5.58579 13.25 6V11.25H18.5C18.9142 11.25 19.25 11.5858 19.25 12C19.25 12.4142 18.9142 12.75 18.5 12.75H13.25V18C13.25 18.4142 12.9142 18.75 12.5 18.75C12.0858 18.75 11.75 18.4142 11.75 18V12.75H6.5C6.08579 12.75 5.75 12.4142 5.75 12C5.75 11.5858 6.08579 11.25 6.5 11.25H11.75V6C11.75 5.58579 12.0858 5.25 12.5 5.25Z" fill="#828282" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="additive-card">
+                            <div class="additive-card__img">
+                                <img src="img/additive2.webp" alt="">
+                            </div>
+                            <div class="additive-card__content">
+                                <div class="additive-card__title">
+                                    Кетчуп
+                                </div>
+                                <div class="additive-card__props">
+                                    <div class="additive-card__price">20 ₽</div>
+                                    <div class="additive-card__weight">25 г</div>
+                                </div>
+                            </div>
+                            <div class="additive-card__action">
+                                <div class="calc">
+                                    <button class="calc__btn _minus m-btn m-btn-gray">
+                                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M18.25 11.25H13H11.5H6.25C5.83579 11.25 5.5 11.5858 5.5 12C5.5 12.4142 5.83579 12.75 6.25 12.75H11.5H13H18.25C18.6642 12.75 19 12.4142 19 12C19 11.5858 18.6642 11.25 18.25 11.25Z" fill="#828282" />
+                                        </svg>
+                                    </button>
+                                    <input type="text" value="0">
+                                    <button class="calc__btn _plus m-btn m-btn-gray">
+                                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 5.25C12.9142 5.25 13.25 5.58579 13.25 6V11.25H18.5C18.9142 11.25 19.25 11.5858 19.25 12C19.25 12.4142 18.9142 12.75 18.5 12.75H13.25V18C13.25 18.4142 12.9142 18.75 12.5 18.75C12.0858 18.75 11.75 18.4142 11.75 18V12.75H6.5C6.08579 12.75 5.75 12.4142 5.75 12C5.75 11.5858 6.08579 11.25 6.5 11.25H11.75V6C11.75 5.58579 12.0858 5.25 12.5 5.25Z" fill="#828282" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="additive-card">
+                            <div class="additive-card__img">
+                                <img src="img/additive3.webp" alt="">
+                            </div>
+                            <div class="additive-card__content">
+                                <div class="additive-card__title">
+                                    Сметана
+                                </div>
+                                <div class="additive-card__props">
+                                    <div class="additive-card__price">25 ₽</div>
+                                    <div class="additive-card__weight">35 г</div>
+                                </div>
+                            </div>
+                            <div class="additive-card__action">
+                                <div class="calc">
+                                    <button class="calc__btn _minus m-btn m-btn-gray">
+                                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M18.25 11.25H13H11.5H6.25C5.83579 11.25 5.5 11.5858 5.5 12C5.5 12.4142 5.83579 12.75 6.25 12.75H11.5H13H18.25C18.6642 12.75 19 12.4142 19 12C19 11.5858 18.6642 11.25 18.25 11.25Z" fill="#828282" />
+                                        </svg>
+                                    </button>
+                                    <input type="text" value="0">
+                                    <button class="calc__btn _plus m-btn m-btn-gray">
+                                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 5.25C12.9142 5.25 13.25 5.58579 13.25 6V11.25H18.5C18.9142 11.25 19.25 11.5858 19.25 12C19.25 12.4142 18.9142 12.75 18.5 12.75H13.25V18C13.25 18.4142 12.9142 18.75 12.5 18.75C12.0858 18.75 11.75 18.4142 11.75 18V12.75H6.5C6.08579 12.75 5.75 12.4142 5.75 12C5.75 11.5858 6.08579 11.25 6.5 11.25H11.75V6C11.75 5.58579 12.0858 5.25 12.5 5.25Z" fill="#828282" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-nav">
+                    <button class="m-btn m-btn-primary">
+                        <span>Пропустить</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  -->
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
