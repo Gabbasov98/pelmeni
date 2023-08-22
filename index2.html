@@ -13,7 +13,7 @@
 </head>
 
 
-<body class="m-page">
+<body class="m-page full-screen-page">
     <div class="wrapper">
         <header class="header _open1">
             <div class="container">
@@ -135,7 +135,7 @@
                         <div class="address-card">
 
 
-                            <input type="radio" name="address2">
+                            <input data-id="1" type="radio" name="address2">
                             <div class="address-card__inner">
                                 <div class="address-card__top">
                                     <div class="address-card__name">
@@ -154,7 +154,7 @@
                         <div class="address-card">
 
 
-                            <input type="radio" name="address2">
+                            <input data-id="2" type="radio" name="address2">
                             <div class="address-card__inner">
                                 <div class="address-card__top">
                                     <div class="address-card__name">
@@ -173,7 +173,7 @@
                         <div class="address-card">
 
 
-                            <input type="radio" name="address2">
+                            <input data-id="3" type="radio" name="address2">
                             <div class="address-card__inner">
                                 <div class="address-card__top">
                                     <div class="address-card__name">
@@ -192,7 +192,7 @@
                         <div class="address-card">
 
 
-                            <input type="radio" name="address2">
+                            <input data-id="4" type="radio" name="address2">
                             <div class="address-card__inner">
                                 <div class="address-card__top">
                                     <div class="address-card__name">
@@ -208,24 +208,6 @@
                             </div>
                         </div>
 
-                        <div class="address-card">
-
-
-                            <input type="radio" name="address2">
-                            <div class="address-card__inner">
-                                <div class="address-card__top">
-                                    <div class="address-card__name">
-                                        Жилой дом
-                                    </div>
-                                    <div class="address-card__bus">
-                                        Авт. № 5
-                                    </div>
-                                </div>
-                                <div class="address-card__desc">
-                                    ул. Саид-Галеева, д. 6
-                                </div>
-                            </div>
-                        </div>
 
                     </div>
                 </section>
@@ -243,7 +225,7 @@
                                                 <div class="address-card">
 
 
-                                                    <input type="radio" name="address">
+                                                    <input data-id="1" type="radio" name="address">
                                                     <div class="address-card__inner">
                                                         <div class="address-card__top">
                                                             <div class="address-card__name">
@@ -264,7 +246,7 @@
                                                 <div class="address-card">
 
 
-                                                    <input type="radio" name="address">
+                                                    <input data-id="2" type="radio" name="address">
                                                     <div class="address-card__inner">
                                                         <div class="address-card__top">
                                                             <div class="address-card__name">
@@ -285,7 +267,7 @@
                                                 <div class="address-card">
 
 
-                                                    <input type="radio" name="address">
+                                                    <input data-id="3" type="radio" name="address">
                                                     <div class="address-card__inner">
                                                         <div class="address-card__top">
                                                             <div class="address-card__name">
@@ -306,7 +288,7 @@
                                                 <div class="address-card">
 
 
-                                                    <input type="radio" name="address">
+                                                    <input data-id="4" type="radio" name="address">
                                                     <div class="address-card__inner">
                                                         <div class="address-card__top">
                                                             <div class="address-card__name">
@@ -318,27 +300,6 @@
                                                         </div>
                                                         <div class="address-card__desc">
                                                             ул. Ленина, д. 47
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="address-card">
-
-
-                                                    <input type="radio" name="address">
-                                                    <div class="address-card__inner">
-                                                        <div class="address-card__top">
-                                                            <div class="address-card__name">
-                                                                Жилой дом
-                                                            </div>
-                                                            <div class="address-card__bus">
-                                                                Авт. № 5
-                                                            </div>
-                                                        </div>
-                                                        <div class="address-card__desc">
-                                                            ул. Саид-Галеева, д. 6
                                                         </div>
                                                     </div>
                                                 </div>
@@ -358,28 +319,32 @@
                                 let coord = [55.790084, 49.110879]
                                 let mapPoints = [{
                                         icon: 'img/mark-black.svg',
-                                        cords: [55.880243, 49.152102]
+                                        cords: [55.880243, 49.152102],
+                                        id: 1
                                     },
                                     {
                                         icon: 'img/mark.svg',
-                                        cords: [55.790084, 49.110879]
+                                        cords: [55.790084, 49.110879],
+                                        id: 2
                                     },
                                     {
                                         icon: 'img/mark.svg',
-                                        cords: [55.796744, 49.121182]
+                                        cords: [55.796744, 49.121182],
+                                        id: 3
                                     },
                                     {
                                         icon: 'img/mark.svg',
-                                        cords: [55.791273, 49.100162]
+                                        cords: [55.791273, 49.100162],
+                                        id: 4
                                     },
                                 ]
 
-
+                                let addressesItemsParent = document.querySelector(".addresses-slider")
 
                                 function init() {
                                     let myMap = new ymaps.Map("map", {
                                         center: coord,
-                                        zoom: 10,
+                                        zoom: 12,
                                         controls: []
                                     });
 
@@ -391,6 +356,12 @@
                                             iconLayout: 'default#image',
                                             iconImageHref: el.icon,
                                             iconImageSize: [44, 44],
+                                        });
+
+                                        placeMark.events.add('click', function() {
+                                            addressesItemsParent.querySelector(`.address-card input[data-id="${el.id}"]`).checked = true
+                                            addressesSlider.slideTo(el.id - 1)
+
                                         });
                                         myMap.geoObjects.add(placeMark);
                                     })
